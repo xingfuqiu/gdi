@@ -1,0 +1,4 @@
+gdi
+===
+
+[delphi]gdi form
