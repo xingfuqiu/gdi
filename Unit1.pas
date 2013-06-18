@@ -42,8 +42,8 @@ begin
   m_Blend.SourceConstantAlpha := 255;
 //  if (FileExists(ExtractFilePath(ParamStr(0)) + 'Security - Alert.png')) then
 //    SetTransparent(WideString(ExtractFilePath(ParamStr(0)) + 'Security - Alert.png'), 100);
-  if (FileExists('C:\1.png')) then
-    SetTransparent(WideString('C:\1.png'), 100);
+  if (FileExists('1.png')) then
+    SetTransparent(WideString('1.png'), 100);
   //   Stay   on   top
   SetWindowPos(Handle, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE or SWP_NOSIZE);
   //SetTransparent('C:\1.png', 255);
@@ -65,9 +65,9 @@ begin
   GPImage := TGPImage.Create();
   m_Image := GPImage.FromFile(lpSkinFile);
   m_Button := TGPImage.Create();
-  m_Button := GPImage.FromFile('C:\2.png');
+  m_Button := GPImage.FromFile('2.png');
   m_Pic := TGPImage.Create();
-  m_Pic := GPImage.FromFile('C:\pic.jpg');
+  m_Pic := GPImage.FromFile('pic.jpg');
 
   //   Create   Compatible   Bitmap
   hdcScreen := GetDC(0);
